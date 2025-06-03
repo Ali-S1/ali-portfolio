@@ -157,7 +157,7 @@
 
 <section id="contact">
   <h2>Get In Touch</h2>
-  <form name="contact" method="POST" data-netlify="true" class="contact-form">
+    <form name="contact" method="POST" data-netlify="true" action="/#thank-you" class="contact-form">
     <input type="hidden" name="form-name" value="contact" />
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
@@ -166,6 +166,12 @@
   </form>
 </section>
 
+<form name="contact" method="POST" data-netlify="true">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
 
 <section id="blog">
   <h2>Blog</h2>
@@ -190,6 +196,12 @@
   <footer>
     <p>© 2025 Ali Siddiqui. All rights reserved.</p>
   </footer>
+
+<section id="thank-you">
+  <h2>Thanks for your message!</h2>
+  <p>I'll get back to you soon, in shāʾ Allāh.</p>
+</section>
+
 <script>
   const toggleBtn = document.getElementById("toggle-btn");
   const body = document.body;
